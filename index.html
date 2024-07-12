@@ -7,24 +7,28 @@
     <title>pseudo class</title>
     <link rel="stylesheet" href="./styles/style.css">
     <style>
+        .container {
+            border: 2px solid rgb(0, 0, 0);
+            height: 250px;
+            display: flex;
+            justify-content: space-around;
+        }
 
+        .box {
+            border: 1px dashed red;
+            height: 50px;
+            width: 50px;
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>hello world</li>
-                <li>hello world</li>
-                <li>hello world</li>
-                <li>hello world</li>
-                <li>hello world</li>
-                <li>hello world</li>
-                <li>hello world</li>
-            </ul>
-        </nav>
-    </header>
+    <h1>flexbox layout</h1>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+    </div>
 </body>
 
 </html>
