@@ -2,32 +2,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=8">
+    <meta name="viewport" content="width=dewidth, iniscale=1.0">
     <title>pseudo class</title>
     <link rel="stylesheet" href="./styles/style.css">
     <style>
         .container {
-            border: 2px solid rgb(0, 0, 0);
-            height: 250px;
-            display: flex;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
         }
 
-        .box {
-            border: 1px dashed red;
-            height: 50px;
-            width: 50px;
+        .item {
+            border: 1px solid aquamarine;
+            height: 100px;
+            width: 100px;
+            background-color: violet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 
 <body>
-    <h1>flexbox layout</h1>
-    <div class="container">
-        <div class="box">box-1</div>
-        <div class="box">box-2</div>
-        <div class="box">box-3</div>
+    <div class="grid">
+        <div class="container">
+            <div class="item">Course-1</div>
+            <div class="item">Course-2</div>
+            <div class="item">Course-3</div>
+            <div class="item">Course-4</div>
+            <div class="item">Course-5</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">13</div>
+            <div class="item">14</div>
+            <div class="item">15</div>
+            <div class="item">16</div>
+            <div class="item">17</div>
+            <div class="item">18</div>
+            <div class="item">19</div>
+            <div class="item">20</div>
+        </div>
     </div>
 </body>
 
