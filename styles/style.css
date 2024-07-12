@@ -1,7 +1,23 @@
-header {
-    font-size: 40px;
+.box {
+    /* width: 200px; */
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-nav {
-    font-size: 50%;
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.box img {
+    width: 100%;
+    height: 10%;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
