@@ -1,16 +1,16 @@
-.container {
-    border: 1px solid black;
-    padding: 10px;
-
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-
+img {
+    height: 100%;
+    width: 100%;
 }
 
-.box {
-    background-color: violet;
-    padding: 5px;
-    border-radius: 8px;
-    width: 300px;
+
+.row {
+    height: 400px;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.vertical-collage img {
+    height: 50%;
 }
