@@ -1,23 +1,7 @@
-.date,
-.day {
-    /* height: 50px;
-    width: 50px; */
-    background-color: violet;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+.box {
+    font-size: 10px;
 }
 
-.calender {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 30px repeat(5, 50px);
-    gap: 10px;
-}
-
-.day {
-    background-color: blueviolet;
-    color: white;
-
+p {
+    font-size: 2em;
 }
