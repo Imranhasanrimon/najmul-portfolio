@@ -5,43 +5,65 @@
 }
 
 .container {
-    border: 2px solid black;
-    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .image {
+    width: 30%;
+    height: 200px;
+}
+
+.container .text {
+    width: 70%;
+}
+
+.container .text button {
+    background-color: rgb(0, 89, 255);
     color: white;
-    font-size: 3em;
-    margin: 0 auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+.parent {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows: repeat(2, 200px);
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-.child {
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.vertical {
-    grid-column: 1/ span 2;
-    grid-row: 1/ span 2;
-    background-color: red;
-}
-
-.horizontal {
-    grid-column: 3/ span 2;
-    background-color: rgb(255, 156, 139);
-}
-
-.blue {
-    background-color: blueviolet;
-}
-
-.black {
-    background-color: black;
-}
 
 @media screen and (max-width:576px) {
-    .container {}
+    .container {
+        flex-direction: column;
+    }
 
+    .container .image {
+        width: 100%;
+        height: 200px;
+    }
 
+    .container .text {
+        width: 100%;
+    }
+
+    .parent {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:1220px) {
+    .parent {
+        display: block;
+    }
 }
