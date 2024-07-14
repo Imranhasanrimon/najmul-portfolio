@@ -16,12 +16,12 @@
 }
 
 .container .image {
-    width: 30%;
+    width: 50%;
     height: 200px;
 }
 
 .container .text {
-    width: 70%;
+    width: 50%;
 }
 
 .container .text button {
@@ -33,11 +33,6 @@
     border-radius: 6px;
 }
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
 
 
 @media screen and (max-width:576px) {
@@ -54,16 +49,8 @@
         width: 100%;
     }
 
-    .parent {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        flex-direction: column;
+    .second {
+        flex-direction: column-reverse;
     }
-}
 
-@media screen and (min-width:577px) and (max-width:1220px) {
-    .parent {
-        display: block;
-    }
 }
