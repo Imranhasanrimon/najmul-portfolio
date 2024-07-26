@@ -18,12 +18,23 @@
     position: relative;
 }
 
+.text {
+    position: absolute;
+    bottom: 5px;
+    font-size: 14px;
+    left: 5px;
+    color: white;
+    z-index: -0;
+}
+
 .image-container .gradient {
     height: 100%;
     width: 100%;
-    background: rgba(255, 0, 0, 0.384);
+    background: rgba(255, 0, 0, 0.284);
     position: absolute;
 }
+
+
 
 .image-container img {
     width: 100%;
