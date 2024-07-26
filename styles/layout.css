@@ -12,7 +12,6 @@
     background: linear-gradient(45deg, blueviolet, lightgreen);
     padding: 15px 9%;
     padding-bottom: 100px;
-    border: 2px solid rgb(255, 255, 255);
 }
 
 .container>h1 {
@@ -21,4 +20,30 @@
     padding-bottom: 15px;
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     font-size: 50px;
+}
+
+.container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+.container .box-container .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.box img {
+    width: 100%;
+    /* height: 80px; */
+    border-radius: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        padding: 20px;
+    }
 }
