@@ -29,10 +29,12 @@ header nav h4 {
     font-family: "Playwrite HR", cursive;
     font-size: 2rem;
     cursor: pointer;
+    text-shadow: 0 5px 5px black;
 
     span {
         font-family: "Playwrite HR", cursive;
         color: tomato;
+        text-shadow: 0 5px 5px tomato;
 
     }
 }
@@ -41,6 +43,7 @@ header nav ul {
     display: flex;
     align-items: center;
     gap: 30px;
+    text-shadow: 0 0px 10px rgba(0, 0, 0, 0.466);
 
     li a {
         font-size: 1.5rem;
@@ -55,5 +58,39 @@ header nav ul {
         color: tomato;
         padding: 7px 10px;
         font-weight: 400;
+    }
+}
+
+header .hero-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 100px auto;
+
+
+    .hero-text {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        border-radius: 50% 50% 50% 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-image {
+        border: 2px solid tomato;
+        border-radius: 50% 50% 5% 50%;
+        padding: 10px;
+        background: rgb(229, 224, 205);
+
+        img {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            border-radius: 50%;
+            padding: 5px;
+        }
     }
 }
